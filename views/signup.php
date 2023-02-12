@@ -1,8 +1,8 @@
 <?php
 session_start();
-require('dbconnexion.php');
-require('function.php');
-require('controlsignup.php');
+require('../app/dbconnexion.php');
+require('../app/function.php');
+require('../controller/controlsignup.php');
 
 
 ?>
