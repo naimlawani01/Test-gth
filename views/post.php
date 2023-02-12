@@ -1,9 +1,9 @@
 <?php
     session_start();
-    require('function.php');
-    require('dbconnexion.php');
-    require('controlpost.php');
-    require('controlcomment.php');
+    require('../app/function.php');
+    require('../app/dbconnexion.php');
+    require('../controller/controlpost.php');
+    require('../controller/controlcomment.php');
 ?>
 <!doctype html>
 <html lang="en">

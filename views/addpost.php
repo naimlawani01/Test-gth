@@ -1,8 +1,12 @@
 <?php
 session_start();
-require('dbconnexion.php');
-require('function.php');
-require('controlsignin.php');
+require('../app/function.php');
+if(!isConnected()){
+    header('location: index.php');
+}
+require('../app/dbconnexion.php');
+
+require('../controller/controlpost.php');
 
 
 ?>
@@ -21,24 +25,27 @@ require('controlsignin.php');
         <?php require_once('header.php'); ?>
         <div class="container" style="margin-top: 30px;">
             <form action="" method="post">
-                <div class="form-group row">
+                <div class=" row">
+                    <h1 class="col-sm-4 offset-md-3 ">Ajouter un post</h1>
+                </div>
+                <div class="row">
                     <p style="color: red;" class="col-sm-4 offset-md-3 col-form-label"><?php if(isset($error)) echo $error; ?></p>
                 </div>
                 <div class="form-group row">
-                    <label for="username" class="col-sm-2 offset-md-3 col-form-label">Username</label>
+                    <label for="title" class="col-sm-2 offset-md-3 col-form-label">Titre</label>
                     <div class="col-sm-3">
-                        <input type="text" class="form-control" name="username" id="username" placeholder="">
+                        <input type="text" class="form-control" name="title" id="title" placeholder="">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="password" class="col-sm-2  offset-md-3 col-form-label">Mot de passe</label>
+                    <label for="content" class="col-sm-2  offset-md-3 col-form-label">Contenu</label>
                     <div class="col-sm-3">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="">
+                        <textarea name="content" id="" cols="80" rows="10"></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="offset-sm-5 col-sm-10">
-                        <input type="submit" name="submit" class="btn btn-primary" value="Se connecter">
+                        <input type="submit" name="addpost" class="btn btn-primary" value="Ajouter">
                     </div>
                 </div>
             </form>
