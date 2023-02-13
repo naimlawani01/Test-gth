@@ -16,10 +16,12 @@ require('../controller/controlsignin.php');
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- style -->
+        <link rel="stylesheet" href="signup.css">
     </head>
     <body>
         <?php require_once('header.php'); ?>
-        <div class="container" style="margin-top: 30px;">
+        <!-- <div class="container" style="margin-top: 30px;">
             <form action="" method="post">
                 <div class="form-group row">
                     <p style="color: red;" class="col-sm-4 offset-md-3 col-form-label"><?php if(isset($error)) echo $error; ?></p>
@@ -42,7 +44,34 @@ require('../controller/controlsignin.php');
                     </div>
                 </div>
             </form>
-        </div>
+        </div> -->
+        <div class="login">
+        
+
+        <h1 class="text-center">Connexion </h1>
+        
+        <form  action="" method="post" class="needs-validation">
+                <p style="color: red;" class="alert alert-light"><?php if(isset($error)) echo $error; ?></p>
+
+            <div class="form-group was-validated">
+                <label for="username" class="form-label" >Username</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="">
+                <div class="invalid-feedback">
+                    Veullez saisir votre Username
+                </div>
+            </div>
+            <div class="form-group was-validated">
+                <label for="password" class="form-label" >Mot de passe </label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="">
+                <div class="invalid-feedback">
+                    Saisir le mot de passe
+                </div>
+            </div>
+            
+            <input class="btn btn-success w-100" type="submit" name="submit" value="Se connecter">
+        </form>
+
+    </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
