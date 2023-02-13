@@ -1,36 +1,57 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Imrane Lawani Projet</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
-            </li>
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-state=1">
+      <title>Accueil</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+    <?php if(isConnected()): ?>
+        <a href="index.php" class="logo"><i class="ri-home-fill"></i><span>Logo</span></a>
+        <ul class="navbar">
+           <li><a href="#index.php" class="active">Accueil</a></li>
+           <li><a href="#">Post</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul> 
+       <?php else: ?>
+        <a href="index.php" class="logo"><i class="ri-home-fill"></i><span>Logo</span></a>
+        <ul class="navbar">
+           <li><a href="#index.php" class="active">Accueil</a></li>
+           <li><a href="#">About Us</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Pages</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul> 
+       <?php endif; ?>
             <?php if(isConnected()): ?>
-                <li class="nav-item active">
-                    <a class="nav-link" href="addpost.php">Ajouter un post</a>
-                </li>
-            <?php endif; ?>
-        </ul>
-        <div class="my-2 my-lg-0">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <?php if(isConnected()): ?>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <?php $user= getUser($_SESSION['userid'], $pdo); ?>  <?=$user['username'] ?></a>
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="logout.php">Se deconnecter</a>
+            <div class="navbar">
+                <a class="user" href="#"><i class="ri-user-line"></i><?php $user= getUser($_SESSION['userid'], $pdo); ?>  <?=$user['username'] ?></a>
+                <div class="main">
+                    <a class="main" href="logout.php"><i class="ri-logout-box-line"></i>Se déconnecter</a>
                 </div>
-            </li>
+            </div>
             <?php else: ?>
-                <li class="nav-item active">
-                    <a class="nav-link" href="signin.php">Se connecter </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="signup.php">S'inscrire </a>
-                </li>
+                <div class="main">
+                <a href="signin.php" class="user"><i class="ri-user-line"></i>Connexion</a>
+                <a href="signup.php">Inscription</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
             <?php endif; ?>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </header>
+
+
+<!--js script-->
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
