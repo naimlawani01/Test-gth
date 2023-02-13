@@ -33,6 +33,7 @@ CREATE TABLE `comments` (
   `post_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `date_comment` date NOT NULL
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -55,6 +56,7 @@ CREATE TABLE `posts` (
   `id` int(11) NOT NULL,
   `title` varchar(250) NOT NULL,
   `content` text NOT NULL,
+  `img_url` varchar(500) NOT NULL,
   `user_id` int(11) NOT NULL,
   `post_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
