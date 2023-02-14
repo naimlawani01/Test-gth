@@ -1,0 +1,37 @@
+
+<header>
+    <?php if(isConnected()): ?>
+        <a href="index.php" class="logo"><i class="ri-home-fill"></i><span>Logo</span></a>
+        <ul class="navbar">
+            <li><a href="#index.php" class="active">Accueil</a></li>
+            <li><a href="#">Post</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> 
+        <?php else: ?>
+        <a href="index.php" class="logo"><i class="ri-home-fill"></i><span>Logo</span></a>
+        <ul class="navbar">
+            <li><a href="#index.php" class="active">Accueil</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> 
+        <?php endif; ?>
+            <?php if(isConnected()): ?>
+            <div class="navbar">
+                <a class="user" href="#"><i class="ri-user-line"></i><?php $user= getUser($_SESSION['userid'], $pdo); ?>  <?=$user['username'] ?></a>
+                <div class="main">
+                    <a class="main" href="logout.php"><i class="ri-logout-box-line"></i>Se déconnecter</a>
+                </div>
+            </div>
+            <?php else: ?>
+                <div class="main">
+                <a href="signin.php" class="user"><i class="ri-user-line"></i>Connexion</a>
+                <a href="signup.php">Inscription</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+            <?php endif; ?>
+    </header>
+    
+    
