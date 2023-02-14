@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <a href="index.php" class="logo"><i class="ri-home-fill"></i><span>Logo</span></a>
+        <a href="index.php" class="logo"><i class="ri-football-line"></i><span>FBlog</span></a>
         <nav >
             <ul class="navbar">
                 <li><a href="#index.php" class="active">Accueil</a></li>
@@ -11,10 +11,20 @@
         </nav>
         <div>
             <ul>
-                <li><a href="#">Connexion</a> </li>
-                <li><a href="#">Inscription</a> </li>
+            <?php if(isConnected()): ?>
+                <li>
+                    <a class="user" href="#"><i class="ri-user-line"></i><?php $user= getUser($_SESSION['userid'], $pdo); ?>  <?=$user['username'] ?></a>
+                </li>
+                <li >
+                    <a class="main" href="logout.php"><i class="ri-logout-box-line"></i>Se déconnecter</a>
+                </li>
+            <?php else: ?>
+                <li><a href="signin.php"><i class="ri-user-line"></i>Connexion</a> </li>
+                <li><a href="signup.php">Inscription</a> </li>
             </ul>
         </div>
+            <?php endif; ?>
+            
         <div class="bx bx-menu" id="menu-icon"></div>  
     </div>
 </header>

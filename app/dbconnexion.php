@@ -3,7 +3,7 @@
 $host = 'localhost' ;
 $dbname= 'naimimranelawani';
 $dbuser= 'root';
-$dbpwd= '';
+$dbpwd= 'root';
 $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 try {
     $pdo = new PDO('mysql:host='.$host.';dbname='.$dbname, $dbuser, $dbpwd , $options);
