@@ -1,33 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: bordex-box;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
 }
 :root{
     --bg-color :#000000;
     --text-color:#000000;
     --main-color:#ffffff;
 }
-body{
-    min-height: 100vh;
-    background: var(--main-color);
-    color: var(--text-color);
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
-header{
-    position: relative;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+header {
+    color: var(--main-color);
+    background:var(--text-color);
+    padding: 2em;
+    font-weight: 500;
+}
+header div{
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+header ul a{
+    color: var(--main-color);
+    font-size: 1em ;
+}
+header ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background:var(--text-color);
-    padding: 10px 7%;
-    transition: all .50s ease;
+    gap: 2em;
+    justify-content: space-around;
 }
 .logo{
     display: flex;
@@ -43,46 +56,14 @@ header{
     font-size: 1.7rem;
     font-weight: 600;
 }
-.navbar {
-    display: flex;
-}
-.navbar a{
+ul a{
     color: var(--main-color);
-    font-size: 1.1 rem;
-    font-weight: 1000;
-    padding: 10px 0;
-    margin: 0px 30px;
+    font-size: 1em;
     transition: all .50s ease;
 }
-.navbar a:hover{
-    color: var(--main-color);
-}
-.navbar a:active{
-    color: var(--main-color);
-}
-.main{
-    display: flex;
-    align-items: center;
-}
-.main a{
-    margin-right: 20px;
-    margin-left: -3px;
-    color: var(--main-color);
-    font-size: 1.1 rem;
-    font-weight: 500;
-    transition: all .50s ease;
-}
-.user{
-    display: flex;
-    align-items: center;
-}
-.user i{
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 7px;   
-}
-.main a:hover{
-    color: var(--main-color);
+ul a:hover{
+    color: rgb(169, 160, 160);
+    border-bottom: rgb(169, 160, 160) solid 2px;
 }
 #menu-icon{
     font-size: 35px;
@@ -91,7 +72,7 @@ header{
     z-index: 10001;
     display: none;
 }
-/* Responsive*/
+
 @media (max-width: 1280px){
     header{
         padding: 14px 2%;
@@ -99,7 +80,6 @@ header{
     }
     .navbar a{
         padding: 5px 0;
-        margin: 0px 20px;
     }
 }
 @media (max-width: 1090px){
@@ -108,33 +88,44 @@ header{
     }
     .navbar{
         position: absolute;
-        top: 100%;
+        top: 9%;
         right: -100%;
         width: 100%;
         background: var(--main-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius:10px;
-        transition: all .50s ease;
+        
+        display: none;
+        
+        transition: all 2s ease-in-out;
         
     }
-.navbar a {
-    display: block;
-    margin: 12px 0;
-    padding: 0px 25px;
-    transition: all .50 ease;
-}
-.navbar a:hover{
-    color:var(--text-color);
-    transform: translateY(5px);
-}
-.navbar a.active{
-    color:var(--text-color);
-}
-.navbar.open{
-    right: 2%;
-}
+    .navbar a {
+        display: block;
+        color: #000000;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+    .navbar a:hover{
+        color:var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color:var(--text-color);
+    }
+    .navbar.open{
+        
+        right: 2%;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navbar a:hover{
+        color:var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color:var(--text-color);
+    }
 }
 dl, ol, ul {
     margin-top: 1;
