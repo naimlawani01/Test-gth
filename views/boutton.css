@@ -1,0 +1,39 @@
+.selector{
+    width: 300px;
+}
+#selectField{
+    width: 70%;
+    padding: 14px 15px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    background: rgba(229, 229, 229, 0.7);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#selectField img{
+    width: 12px;
+    transform: transform 0.5s;
+}
+#list{
+    width: 100%;
+    background: rgba(229, 229, 229, 0.7);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.options{
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+.options:hover{
+    background: rgba(255, 63, 63, 0.7);  
+}
+.hide{
+    display: none;
+}
