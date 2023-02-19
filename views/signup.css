@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 300;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
     height: min-content;
     padding: 20px;
     border-radius: 12px;
-    background: #ffffff;
+    background: #ffffff54;
     margin: auto;
     margin-top: 10%;
 }
