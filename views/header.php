@@ -4,9 +4,9 @@
         <nav >
             <ul class="navbar">
                 <li><a href="index.php" class="active">Accueil</a></li>
-                <li><a href="#">Post</a></li>
+                <li><a href="">Post</a></li>
                 <li><a href="blog.php">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul> 
         </nav>
         <div>
@@ -20,7 +20,7 @@
                 </li>
             <?php else: ?>
                 <li><a href="signin.php"><i class="ri-user-line"></i>Connexion</a> </li>
-                <li><a href="signup.php">Inscription</a> </li>
+                <li><a href="signup.php"><i class="ri-user-add-line"></i>Inscription</a> </li>
             </ul>
         </div>
             <?php endif; ?>

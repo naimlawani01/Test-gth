@@ -74,13 +74,13 @@
     <section class="container cat">
         <h1>Nos Meilleurs categories</h1>
         <div class="cat-card">
-            <div class="cat-item">
+            <div class="cat-item"><img src="laliga-h-300x300.jpg">
                 LaLiga
             </div>
-            <div class="cat-item">
+            <div class="cat-item"><img src="L1.svg">
                 Ligue 1
             </div>
-            <div class="cat-item">
+            <div class="cat-item"><img src="Premier_League_Logo.svg.png">
                 Premier League
             </div>
         </div>

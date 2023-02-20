@@ -19,6 +19,8 @@ require('../controller/controlsignin.php');
         <!-- style -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="signup.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
         <?php require_once('header.php'); ?>
