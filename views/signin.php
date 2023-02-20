@@ -54,14 +54,14 @@ require('../controller/controlsignin.php');
         <form  action="" method="post" class="needs-validation">
                 <p style="color: red;" class="alert alert-light"><?php if(isset($error)) echo $error; ?></p>
 
-            <div class="form-group was-validated">
+            <div class="form-group ">
                 <label for="username" class="form-label" >Username</label>
                 <input type="text" class="form-control" name="username" id="username" placeholder="">
                 <div class="invalid-feedback">
                     Veullez saisir votre Username
                 </div>
             </div>
-            <div class="form-group was-validated">
+            <div class="form-group ">
                 <label for="password" class="form-label" >Mot de passe </label>
                 <input type="password" class="form-control" name="password" id="password" placeholder="">
                 <div class="invalid-feedback">
@@ -69,7 +69,7 @@ require('../controller/controlsignin.php');
                 </div>
             </div>
             
-            <input class="btn btn-success w-100" type="submit" name="submit" value="Se connecter">
+            <input class="btn btn-outline-dark w-100" type="submit" name="submit" value="Se connecter">
         </form>
 
     </div>

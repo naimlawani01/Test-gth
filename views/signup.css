@@ -6,28 +6,32 @@
     box-sizing: border-box;
     font-weight: 300;
 }
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 body {
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background: #596874;
+    /* background: #596874; */
 }
 
 .login {
-    width: 390px;
+    width: 33%;
     height: min-content;
     padding: 20px;
     border-radius: 12px;
-    background: #ffffff54;
+    /* background: #ffffff54; */
     margin: auto;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 
 .login h1 {
     font-size: 36px;
-    margin-bottom: 25px;
 }
 
 .login form {
