@@ -3,9 +3,9 @@
         <a href="index.php" class="logo"><i class="ri-football-line"></i><span>FBlog</span></a>
         <nav >
             <ul class="navbar">
-                <li><a href="#index.php" class="active">Accueil</a></li>
+                <li><a href="index.php" class="active">Accueil</a></li>
                 <li><a href="#">Post</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="blog.php">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul> 
         </nav>

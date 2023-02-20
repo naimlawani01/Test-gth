@@ -104,15 +104,64 @@ require('../app/function.php');
         </ul>
     </div>
 
-
-        <div class="container" style="margin-top: 20px;">
+<style>
+    .posts{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        width: 30%;
+        margin-bottom: 2rem;
+    }
+    .card-title{
+        font-weight: 600;
+    }
+    .card-date{
+        font-weight: 400;
+        color: rgb(255, 119, 85);
+    }
+    .card-text{
+        
+        margin: 1rem 0 1rem 0;
+        font-weight: 300;
+        color: rgb(66, 61, 61);
+    }
+    a.seeall{
+        display:inline-block;
+        padding:0.55rem 1.5rem;
+        border: 1px solid #3b3a3ab5;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:'Roboto',sans-serif;
+        font-weight:300;
+        color:#000000;
+        text-align:center;
+        transition: all 0.2s;
+    }
+    a.seeall:hover{
+        color:#000000;
+        background-color:#FFFFFF;
+    }
+    @media all and (max-width:30em){
+        a.seeall{
+            display:block;
+            margin:0.4em auto;
+        }
+    }
+</style>
+        <div class="container posts" style="margin-top: 20px;">
             <?php foreach($posts as $post):?>
                 <div class="card" >
+                    <img width="100%" src="hero.jpg" alt="">
                     <div class="card-body">
-                        <h4 class="card-title"><?=$post['title'] ?></h4><?=$post['post_date'] ?>
+                        <h4 class="card-title"><?=$post['title'] ?></h4 > <span class="card-date"><?=$post['post_date'] ?></span>
                         <?php $user= getUser($post['user_id'], $pdo); ?>
                         <strong><?=$user['username'] ?></strong> 
-                        <p class="card-text"><?=substr($post['content'], 0, 300 )?></p><a href="post.php?idpost=<?=$post['id'] ?> ">Voir plus</a>
+                        <p class="card-text"><?=substr($post['content'], 0, 100)?></p><a class="seeall" href="post.php?idpost=<?=$post['id'] ?> ">Voir plus</a>
                     </div>
                 </div>
             <?php endforeach;?>
