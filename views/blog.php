@@ -89,6 +89,9 @@ require('../app/function.php');
                     </div>
                 </div>
             <?php endforeach;?>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+
             <?php if($page==0): ?>
                 <?php if($nbrPosts['nbr']>5): ?>
                 <a class="seeall" href="blog.php?page=<?=$page+1?>">Suivant</a>
