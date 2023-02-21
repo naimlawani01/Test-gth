@@ -25,84 +25,8 @@ require('../app/function.php');
                 <h1>Nos meilleurs Posts</h1>
             </div>
         </div>
-        
-        <!---Selector 1-->
-    <div class="container selector">
-        <div id="selectField">
-            <p id="selectText"> Other categories</p>
-            <img src="arrow.png" id="arrowIcon">
-        </div>
-    <ul id="list" class="hide">
-        <ul>
-            <li class="options">
-            <p>Psg-Bayern</p>
-            </li>
-            <li class="options">
-            <p>AC Milan-Tottenham</p>
-            </li>
-            <li class="options">
-            <p>Frankfort-Naples</p>
-            </li>
-            <li class="options">
-            <p>Bruges-Benfica</p>
-            </li>
-            <li class="options">
-            <p>Dortmund-Chelsea</p>
-            </li>
-        </ul>
-    </div>
 
-    <!---Selector 2-->
-    <div class="container selector">
-        <div id="selectField">
-            <p id="selectText">Other Tags</p>
-            <img src="arrow.png" id="arrowIcon">
-        </div>
-    <ul id="list" class="hide">
-        <ul>
-            <li class="options">
-            <p>Psg</p>
-            </li>
-            <li class="options">
-            <p>AC Milan</p>
-            </li>
-            <li class="options">
-            <p>Naples</p>
-            </li>
-            <li class="options">
-            <p>Benfica</p>
-            </li>
-            <li class="options">
-            <p>Dortmund</p>
-            </li>
-        </ul>
-    </div>
-
-        <!---Selector 3-->
-        <div class="container selector">
-        <div id="selectField">
-            <p id="selectText">Filter</p>
-            <img src="arrow.png" id="arrowIcon">
-        </div>
-    <ul id="list" class="hide">
-        <ul>
-            <li class="options">
-            <p>LDC</p>
-            </li>
-            <li class="options">
-            <p>Europa League</p>
-            </li>
-            <li class="options">
-            <p>Conferance League</p>
-            </li>
-            <li class="options">
-            <p> Nations League</p>
-            </li>
-            <li class="options">
-            <p>Uefa Euro</p>
-            </li>
-        </ul>
-    </div>
+       
 
 <style>
     .posts{
