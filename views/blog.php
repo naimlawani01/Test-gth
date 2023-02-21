@@ -80,7 +80,7 @@ require('../app/function.php');
         <div class="container posts" style="margin-top: 20px;">
             <?php foreach($posts as $post):?>
                 <div class="card" >
-                    <img width="100%" src="hero.jpg" alt="">
+                    <img width="100%" src="<?=$post['img_url'] ?>" alt="">
                     <div class="card-body">
                         <h4 class="card-title"><?=$post['title'] ?></h4 > <span class="card-date"><?=$post['post_date'] ?></span>
                         <?php $user= getUser($post['user_id'], $pdo); ?>
@@ -89,13 +89,16 @@ require('../app/function.php');
                     </div>
                 </div>
             <?php endforeach;?>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+
             <?php if($page==0): ?>
                 <?php if($nbrPosts['nbr']>5): ?>
-                <a href="index.php?page=<?=$page+1?>">Suivant</a>
+                <a class="seeall" href="blog.php?page=<?=$page+1?>">Suivant</a>
                 <?php endif; ?>
                 <?php else: ?>
-                    <a href="index.php?page=<?=$page-1?>">Précédent</a>
-                    <a href="index.php?page=<?=$page+1?>">Suivant</a>
+                    <a class="seeall" href="blog.php?page=<?=$page-1?>">Précédent</a>
+                    <a class="seeall" href="blog.php?page=<?=$page+1?>">Suivant</a>
                 <?php endif; ?>
         </div>
         <!-- Optional JavaScript -->

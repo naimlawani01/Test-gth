@@ -215,7 +215,9 @@ textarea.input {
   font-size: 0.95rem;
 }
 
-
+.social-icons a{
+  color: #000000;
+}
 
 .square {
   position: absolute;
