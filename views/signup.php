@@ -62,7 +62,7 @@ require('../controller/controlsignup.php');
         <h1 class="text-center">Veuillez vous inscrire</h1>
         
         <form  action="" method="post" class="needs-validation">
-                <p style="color: red;" class="alert alert-light"><?php if(isset($error)) echo $error; ?></p>
+                <p style="color: red;" class="alert "><?php if(isset($error)) echo $error; ?></p>
 
             <div class="form-group ">
                 <label for="username" class="form-label" >Username</label>
