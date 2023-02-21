@@ -72,7 +72,7 @@
         <p>Le meilleur du foot <i class="icon-hero ri-football-line"></i></p>
     </div>
     <section class="container cat">
-        <h1>Nos Compétitions Favoritess</h1>
+        <h1>Nos Compétitions Favorites</h1>
         <div class="cat-card">
             <div class="cat-item"><img src="laliga-h-300x300.jpg">
             </div>
