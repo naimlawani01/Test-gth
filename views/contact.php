@@ -54,7 +54,7 @@ require('../app/function.php');?>
         <div class="contact-info">
           <h3 class="title"><i class="ri-football-line"></i>FBlog, le meilleur blog Football</h3>
           <p class="text">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
           </p>
 
           <div class="social-media">
@@ -81,7 +81,7 @@ require('../app/function.php');?>
           <span class="circle two"></span>
 
           <form action="" method="post" autocomplete="off">
-            <h3 class="title1">Contactez-Nous</h3>
+            <h3 class="title1"></i>Contactez-Nous</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
               <label for="">Nom d'utilisateur</label>
