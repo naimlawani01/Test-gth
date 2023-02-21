@@ -139,7 +139,7 @@ textarea.input {
   cursor: pointer;
   transition: 0.3s;
   margin: 0;
-  width: 116%;
+  width: 135%;
 }
 
 .btn:hover {
@@ -221,15 +221,12 @@ textarea.input {
 }
 
 .social-icons a {
-  width: 105px;
-  height: 105px;
   border-radius: 15px;
-  background: linear-gradient(45deg, #000000, #000000);
-  color: #fff;
   text-align: center;
   line-height: 135px;
   margin-right: 0.5rem;
   transition: 0.3s;
+  color: #000000;
 }
 
 .social-icons a:hover {
