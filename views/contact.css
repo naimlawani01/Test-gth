@@ -220,18 +220,6 @@ textarea.input {
   margin-top: 0.5rem;
 }
 
-.social-icons a {
-  border-radius: 15px;
-  text-align: center;
-  line-height: 135px;
-  margin-right: 0.5rem;
-  transition: 0.3s;
-  color: #000000;
-}
-
-.social-icons a:hover {
-  transform: scale(1.05);
-}
 
 .square {
   position: absolute;
