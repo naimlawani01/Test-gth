@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <a href="index.php" class="logo"><i class="ri-football-line"></i><span>DEVOP</span></a>
+        <a href="index.php" class="logo"><i class="ri-football-line"></i><span>FBLOG</span></a>
         <nav >
             <ul class="navbar">
                 <li><a href="index.php" class="active">Accueil</a></li>
