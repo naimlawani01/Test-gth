@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="boutton.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <title>Document</title>
+    <title>Accueil</title>
 </head>
 <body>
     <?php require('header.php'); ?>
@@ -72,7 +72,7 @@
         <p>Le meilleur du foot <i class="icon-hero ri-football-line"></i></p>
     </div>
     <section class="container cat">
-        <h1>Nos Meilleurs categories</h1>
+        <h1>Nos Compétitions Favorites</h1>
         <div class="cat-card">
             <div class="cat-item"><img src="laliga-h-300x300.jpg">
             </div>
