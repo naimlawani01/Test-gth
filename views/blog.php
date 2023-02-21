@@ -91,11 +91,11 @@ require('../app/function.php');
             <?php endforeach;?>
             <?php if($page==0): ?>
                 <?php if($nbrPosts['nbr']>5): ?>
-                <a href="index.php?page=<?=$page+1?>">Suivant</a>
+                <a href="blog.php?page=<?=$page+1?>">Suivant</a>
                 <?php endif; ?>
                 <?php else: ?>
-                    <a href="index.php?page=<?=$page-1?>">Précédent</a>
-                    <a href="index.php?page=<?=$page+1?>">Suivant</a>
+                    <a href="blog.php?page=<?=$page-1?>">Précédent</a>
+                    <a href="blog.php?page=<?=$page+1?>">Suivant</a>
                 <?php endif; ?>
         </div>
         <!-- Optional JavaScript -->
