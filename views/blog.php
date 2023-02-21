@@ -80,7 +80,7 @@ require('../app/function.php');
         <div class="container posts" style="margin-top: 20px;">
             <?php foreach($posts as $post):?>
                 <div class="card" >
-                    <img width="100%" src="hero.jpg" alt="">
+                    <img width="100%" src="<?=$post['img_url'] ?>" alt="">
                     <div class="card-body">
                         <h4 class="card-title"><?=$post['title'] ?></h4 > <span class="card-date"><?=$post['post_date'] ?></span>
                         <?php $user= getUser($post['user_id'], $pdo); ?>
